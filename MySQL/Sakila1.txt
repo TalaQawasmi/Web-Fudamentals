@@ -1,0 +1,15 @@
+1>> select address.city_id as city_id, customer.first_name as first_name, customer.last_name as last_name, customer.email, address.address from customer, address where customer.address_id = address.address_id and city_id=321;
+
+2>> select * from film, film_category, category where film.film_id = film_category.film_id and film_category.category_id = category.category_id and category.name ='comedy';
+
+3>> SELECT film_actor.actor_id AS actor_id, CONCAT(actor.first_name,' ',actor.last_name) AS first_name, film.title, film.description, film.release_year FROM actor, film, film_actor WHERE film.film_id = film_actor.film_id AND film_actor.actor_id = 5;
+
+4>> SELECT customer.first_name, customer.last_name, customer.email, address.address FROM customer ,store ,address ,city WHERE customer.store_id = store.store_id AND customer.address_id = address.address_id AND address.city_id = city.city_id AND store.store_id = 1 AND city.city_id IN (1, 42, 312, 459);
+
+5>> SELECT film.title, film.description, film.release_year, film.rating, film.special_features FROM film, film_actor WHERE film_actor.film_id = film.film_id AND film.rating = "G" AND actor_id = 15 AND film.special_features LIKE "%Behind the Scenes%"; // % are used as wildcards
+
+6>> SELECT film.film_id, film.title, actor.actor_id, CONCAT(actor.first_name, ' ', actor.last_name) AS actor_name FROM film, film_actor, actor WHERE film.film_id = film_actor.film_id AND film_actor.actor_id = actor.actor_id AND film_actor.film_id = 369;
+
+7>> SELECT film.title, film.description, film.release_year, film.rating, film.special_features, category.name FROM film, film_category, category WHERE film.film_id = film_category.film_id AND film_category.category_id = category.category_id AND film.rental_rate = 2.99 AND category.name='drama';
+
+8>> SELECT film.title, film.description, film.release_year, film.rating, film.special_features, category.name AS genre, CONCAT(actor.first_name, ' ', actor.last_name) AS actor_name FROM film, film_category, category, film_actor, actor WHERE film.film_id = film_category.film_id AND film_category.category_id = category.category_id AND film.film_id = film_actor.film_id AND film_actor.actor_id = actor.actor_id AND category.name = 'action' AND actor.first_name ='Sandra' AND actor.last_name = 'Kilmer';

@@ -1,0 +1,6 @@
+mysql> mysql -u root -p;
+mysql> create database parking;
+mysql> show databases;
+mysql> use parking;
+mysql> show tables;
+

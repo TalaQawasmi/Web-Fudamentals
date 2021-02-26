@@ -1,0 +1,8 @@
+1>> SELECT countries.name, languages.language, languages.percentage FROM countries, languages where countries.id = languages.country_id and languages.language ='slovene' desc;
+2>> select countries.name, count(cities.country_id) as cities from countries, cities where countries.id = cities.country_id group by countries.name order by count(cities.id)desc;
+3>> select cities.name from cities, countries where countries.name ='mexico' and countries.id = cities.country_id and cities.population > 500000 order by cities.population desc;
+4>> select languages.language, countries.name, languages.percentage from languages ,countries where languages.country_id =countries.id and languages.percentage > 89 order by (languages.percentage) desc;
+5>> select countries.name, countries.surface_area, countries.population from countries where countries.surface_area < 501 and countries.population > 100000;
+6>> select countries.name, countries.capital, countries.government_form, countries.life_expectancy from countries where countries.government_form = 'Constitutional Monarchy' and countries.capital > 200 and countries.life_expectancy > 75;
+7>> select countries.name, cities.name, cities.district, cities.population from countries, cities where countries.name ='Argentina' and countries.id = cities.country_id and cities.district ='Buenos Aires' and cities.population > 500000;
+8>> select countries.region as region, count(countries.name) as countries from countries group by region order by countries desc;
