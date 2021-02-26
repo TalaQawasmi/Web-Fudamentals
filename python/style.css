@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 970px;
+    margin: 0px auto;
+    background-color:#245076 ;
+    color: white;
+}
+.main-content{
+    padding:15x;
+    display: inline-block;  
+}
+.header-left a{
+    color: #b8a30b;
+}
+.header-right{
+    text-align: center;
+    display: inline-block;
+    margin-left: 240px;
+    vertical-align: top;
+}
+.header-left span{
+    color: black;
+}
+.header-left img{
+    width: 375px;
+}
+.search{
+    width: 300px;
+    height: 50px;
+    padding: 15px 7px 4px 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: #444444;
+    
+}
+.search input{
+    border: 2px solid silver;
+    text-align: center;
+    padding: 10px;
+}
+.navbar{
+    width:800px;
+    border-radius: 5px;
+    list-style: none;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    background-color: #487ead;
+    padding: 10px 25px;
+    margin: 20px auto;
+}
+.left-navbar {
+    margin-left: 100px;
+    display: inline-block;
+    text-align:center ;
+    list-style-type: none;
+}
+.left-navber li{
+    margin:13px;
+}
+.left-navbar a{
+    color: white;
+}
+.left-navbar span{
+    color:#b8a30b;
+    font-size: 10px;
+    vertical-align: center;
+}
+.content{
+    display:inline-block;
+    width: 600px;
+    text-align: center;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-bottom: 10px;  
+}
+.content h3{
+    color: #b8a30b;
+}
+.middle{
+    background-color: white;
+    width: 970px;
+    color: black;
+    display: flex;
+    height: 200px;                     
+}
+.left{
+    text-align: center;
+    width: 400px;
+    font-size: 12px;
+    margin-left: 50px;
+}
+hr{
+    width: 400px;
+    height: 4px;
+    margin-top:10px ;
+    margin-bottom:10px ;
+    background-color: #9abfe1;
+}
+.left span{
+    color: #9abfe1;
+}
+.left p{
+    word-wrap: break-word;
+    margin: auto;
+    font-size: 13px;
+    width: 300px;
+    margin: 0px auto 5px auto;
+}
+.left ul{
+    list-style: square;
+    margin-left: 75px;
+    width: 400px;
+}
+.left li a{
+        margin-left: -125px;
+        text-decoration: none;
+        color: #88b4db;
+        font-size: 13px;
+}
+.footer{
+    background-color: #245076 ;
+    color: #6a9ecc;
+    font-size: 10px;
+    align-items: center;
+    height: 50px; 
+    display: flex;
+}
+.footer h2{
+    margin: 70px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
