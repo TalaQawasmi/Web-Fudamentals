@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('img').click(function(){
+                    $(this).hide();
+                });
+            
+                $('button').click(function(){
+                    $("img").show();
+                });
+            });
+        </script>
+    <meta= charset="UTI-8">
+    <title>Disapearing Ninja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class ="container">
+    <div class="header">
+        <div class="top">
+            <h4>My jQuery basic assignement!</h4>
+        </div>
+        <div class="bottom">
+            <input type ="image" id ="image" alt="arrow right" src="arrow left.png" width="30px" height="30px"> 
+            <input type ="image" id ="image" alt="arrow left" src="arrow right.png" width="30px" height="30px"> 
+            <input type ="image" id ="image" alt="x icon" src="x icon.png" width="30px" height="30px"> 
+            <input type ="image" id ="image" alt="home" src="home.png" width="30px" height="30px"> 
+            <input type ="text" placeholder="http://localhost/jQuery.hmtl">
+            <input type ="text" placeholder="Search">
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="text">
+            <h4>jQuery - assignment 1</h4>
+        </div>
+        <div class="box">
+            <img src="minions.jpg" alt="minions">
+            <img src="minions.jpg" alt="minions">
+            <img src="minions.jpg" alt="minions">
+            <img src="minions.jpg" alt="minions">
+        </div>
+        <div class ="box">
+            <img src="minions.jpg" alt="minions">
+            <img src="minions.jpg" alt="minions">
+            <img src="minions.jpg" alt="minions">
+            <img src="minions.jpg" alt="minions">
+        </div>
+        <div class="button">
+            <button type="text" >Restore</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p><b>//</b></p>
+    </div>
+    
+</div>
+</body>
+</html>
