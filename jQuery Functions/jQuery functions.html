@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#Addclass').click(function(){
+                    $('#Addclass').addClass("red");
+                });
+            
+                $('#Slidetoggle').click(function(){
+                    $("#p1").slideToggle();
+                });
+
+                $('#Append').click(function(){
+                    $("#p3").append("<b>Appended text</b>");
+                });
+
+                $('#Click').click(function(){
+                    alert("The button was clicked");
+                });
+
+                $('#Hide').click(function(){
+                    $(".p4").hide();
+                });
+
+                $('#Show').click(function(){
+                    $(".p5").show();
+                });
+
+                $('#Toggle').click(function(){
+                    $(".p6").toggle('slow');
+                });
+
+                $('#slideDown').click(function(){
+                    $(".p7").slideDown();
+                });
+                
+                $('#slideUp').click(function(){
+                    $(".p8").slideUp();
+                });
+
+                $('#fadeIn').click(function(){
+                    $(".p9").fadeIn();
+                });
+
+                $('#fadeOut').click(function(){
+                    $(".p10").fadeOut();
+                });
+
+                $('#before').click(function(){
+                    $(".p11").before("New text!");
+                });
+
+                $('#after').click(function(){
+                    $(".p12").after("New text!");
+                });
+
+                $('#html').click(function(){
+                    $(".p13").html("New text!");
+                });
+
+                $('#attr').click(function(){
+                    $("img").attr('src',"icon.jpg");
+                });
+                $('#val').click(function(){
+                    $("input:text").val("group work done!");
+                });
+
+                $('#text').click(function(){
+                    $(".p14").text("New text!");
+                });
+
+            });
+        </script>
+        <meta= charset="UTI-8">
+        <title>jQuery functions</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class ="container">
+            <div class="header">
+                <div class="top">
+                    <h4>My jQuery basic assignement!</h4>
+                </div>
+                <div class="bottom">
+                    <input type ="image" id ="image" alt="left-arrow" src="arrow left.png" width="30px" height="30px"> 
+                    <input type ="image" id ="image" alt="right-arrow" src="arrow right.png" width="30px" height="30px"> 
+                    <input type ="image" id ="image" alt="x icon" src="x icon.png" width="30px" height="30px"> 
+                    <input type ="image" id ="image" alt="home" src="home.png" width="30px" height="30px"> 
+                    <input type ="text" placeholder="http://localhost/jQuery.hmtl">
+                    <input type ="text" placeholder="Search">
+                </div>
+                
+            </div>
+            <div class="main-content">
+                <div class="box">
+                    <h1>AddClass</h1>
+                    <button id="Addclass">AddClass</button>
+                    <P>Click button to add class 'red' to this paragraph</P>
+                </div>
+                <div class="box">
+                    <h1>Slidetoggle</h1>
+                    <button id="Slidetoggle">Slidetoggle</button>
+                    <P id="p1">Click button to Slidetoggle this sentence</P>
+                </div>
+                <div class="box">
+                    <h1>append</h1>
+                    <button id="Append">Append</button>
+                    <P id="p3">Click button to append the appended text sentence</P>
+                </div>
+                <div class="box">
+                    <h1>Click</h1>
+                    <button id="Click">Click</button>
+                    <P>Click here!</P>
+                </div>
+                <div class="box">
+                    <h1>Hide</h1>
+                    <button id="Hide">Hide</button>
+                    <P class="p4">Click here to hide!</P>
+                </div>
+                <div class="box">
+                    <h1>Show</h1>
+                    <button id="Show">Show</button>
+                    <P class="p5">Click here to show!</P>
+                </div>
+                <div class="box">
+                    <h1>Toggle</h1>
+                    <button id="Toggle">Toggle</button>
+                    <P class="p6">Click here to toggle!</P>
+                </div>
+                <div class="box">
+                    <h1>slideDown</h1>
+                    <button id="slideDown">slideDown</button>
+                    <P class="p7">Click here to slideDown!</P>
+                </div>
+                <div class="box">
+                    <h1>slideUp</h1>
+                    <button id="slideUp">slideUp</button>
+                    <P class="p8">Click here to slideUp!</P>
+                </div>
+                <div class="box">
+                    <h1>fadeIn</h1>
+                    <button id="fadeIn">fadeIn</button>
+                    <P class="p9">Click here to fadeIn!</P>
+                </div>
+                <div class="box">
+                    <h1>fadeOut</h1>
+                    <button id="fadeOut">fadeOut</button>
+                    <P class="p10">Click here to fadeOut!</P>
+                </div>
+                <div class="box">
+                    <h1>before</h1>
+                    <button id="before">before</button>
+                    <P class="p11">Click here to perform before!</P>
+                </div>
+                <div class="box">
+                    <h1>after</h1>
+                    <button id="after">after</button>
+                    <P class="p12">Click here to perform after!</P>
+                </div>
+                <div class="box">
+                    <h1>html</h1>
+                    <button id="html">html</button>
+                    <P class="p13">Click here to perform html!</P>
+                </div>
+                <div class="box">
+                    <h1>attr</h1>
+                    <button id="attr">attr</button>
+                    <P>Click here to attr image!</P>
+                    <img src="paris.jpg" width="70px" height="70px">
+                </div>
+                <div class="box">
+                    <h1>val</h1>
+                    <button id="val">val</button>
+                    <P>Click here to perform val!</P>
+                    <input type="text" placeholder=" ">
+                </div>
+                <div class="box">
+                    <h1>text</h1>
+                    <button id="text">text</button>
+                    <P class="p14">Click here to perform text!</P>
+                </div>
+                
+                
+            </div>
+            <div class="footer">
+                <p><b>//</b></p>
+            </div>
+            
+        </div>
+    </body>
+</html>

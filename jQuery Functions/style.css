@@ -1,0 +1,42 @@
+.container{
+    width: 500px;
+    outline: 2px solid black;    
+}
+.header{
+    height: 100px;
+    background-color:#c1c1c1;
+    text-align: center; 
+    outline: 2px solid black;  
+}
+.header .top{
+    text-align: center;   
+}
+.box h1{
+    text-align: center;
+}
+.main-content{
+    display: inline-block;
+    margin-left: 25px;
+}
+.main-content img{
+    width: 70px;
+    height: 70px;
+}
+.box{
+    border-bottom: 2px solid black ;
+    
+}
+.box button{
+    display:inline;
+}
+.box p{ 
+    display:inline;
+}
+.footer{
+    outline: 2px solid black;
+    background-color:#c1c1c1;
+    text-align: right;
+}
+.red{
+    background-color: red;
+}
