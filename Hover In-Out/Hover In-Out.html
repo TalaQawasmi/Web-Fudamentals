@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta= charset="UTI-8">
+    <title>Hover In/Out</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+        <script>
+        $(document).ready(function(){
+            $('img').hover(function(){
+			$(this).attr('temp',$(this).attr("src"));
+			$(this).attr('src', $(this).attr('data-alt-src'));
+			$(this).attr('data-alt-src', $(this).attr("temp"));
+			
+            },function(){
+                $(this).attr('temp',$(this).attr("src"));
+			$(this).attr('src', $(this).attr('data-alt-src'));
+			$(this).attr('data-alt-src', $(this).attr("temp"));
+
+            });  
+            
+		});	        
+        </script>
+</head>
+
+<body>
+<div class ="container">
+ 
+        <div class="box">
+            <img src="Rachel Green.jpg" data-alt-src='Rachel 2.jpg' temp="">
+            <img src="Monica Geller.jpg" data-alt-src='Monica2.jpg'temp="">
+            <img src="Pheope Buffay.jpg" data-alt-src='Pheope2.jpg'temp="">
+           
+        </div>
+        <div class ="box">
+            <img src="Ross Geller.jpg" data-alt-src='Ross2.jpg'temp="">
+            <img src="Joey Tribbiani.jpg" data-alt-src='Joey2.jpg'temp="">
+            <img src="Chandler Bing.jpg" data-alt-src='Chandler2.jpg'temp="">
+        </div>
+       
+</div>
+</body>
+</html>
