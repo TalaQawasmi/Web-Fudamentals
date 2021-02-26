@@ -1,0 +1,115 @@
+.container{
+    width: 980px;
+    height: 900px;
+    background-color: #48353d;
+    
+}
+.header{
+    height: 70px;
+    background-color:#f6f6f6;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.header h2{
+    display: inline-block;
+    padding-right: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header h3{
+    display: inline-block;
+    font-style: normal;
+}
+.body{
+    width: 980px;
+    height: 870;
+    display: inline-block;
+}
+.body img{
+    width: 350px;
+    height: 230px;
+    border: 4px solid #c0c0c0;
+    margin: 20px;
+}
+.body .aboutMe{
+    display: inline-block;
+    width: 550px;
+    height: 238px;
+    vertical-align: top;
+    margin: right 50px;
+    background-color: #e5dbe5;
+    margin-top: 20px;
+}
+.body .aboutMe h2{
+    height: 30px;
+    padding: 5px;
+    color: white;
+    background-color: #8f8e99;
+    margin-top: 0px;
+}
+.body p{
+   padding-left: 10px;
+    
+}
+.body a{
+    color: black;
+    padding-left: 10px;
+}
+.body .firstBox{
+    outline: 2px solid black;
+    width: 285px;
+    margin-left: 23px;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: #e5dbe5;
+    align-items: center; 
+    display: inline-block; 
+    vertical-align: top; 
+}
+.firstBox img{
+    width: 250px;
+    height: 170px;
+    border: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+.firstBox h3{
+    width: 300x;
+    margin-top: 0px;
+    background-color:#8f8e99 ;
+    margin: 5px;
+}
+.firstBox p{
+    margin: 0px;
+    padding: 5px;
+    font-size: 12px;
+}
+.firstBox ul li{
+    display: inline-block   ;
+}
+.firstBox ul li img{
+    width: 25px;
+    height: 25px;
+}
+.firstBox button{
+    background-color: #407d61;
+    text-align: center;
+}
+.footer{
+    height: 70px;
+    width:980px;
+    padding-top: 3px;
+    background-color: #f6f6f6;
+    text-align: center;
+    display: inline-block;
+}
+.footer ul li{
+    display: inline-block;
+}
+.footer a{
+    color: black;
+}
+.footer ul li img{
+    width: 15px;
+    height: 15px;
+}
